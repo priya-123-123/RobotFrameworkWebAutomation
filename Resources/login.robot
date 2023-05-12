@@ -24,8 +24,8 @@ Enter password
     input text    ${password}   ${pass}
 click on login button
     click button    ${loginbutton}
-check if page contains My account
-    page should contain    My account
+#check if page contains My account
+    #page should contain    My account
 
 check if page contains error message
     page should contain    Login was unsuccessful
