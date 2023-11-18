@@ -14,6 +14,7 @@ ${logout}   //a[contains(text(),'Log out')]
 *** Keywords ***
 open nopcommerce website
     open browser    ${url}  ${browser}
+    maximize browser window
 click on login link
     click element    ${login}
 Enter email

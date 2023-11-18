@@ -1,67 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230511 15:54:51.498" rpa="false" schemaversion="3">
-<suite id="s1" name="Login" source="C:\Users\BSR\PycharmProjects\RobotFrameworkWebAutomation\login.robot">
-<test id="s1-t1" name="Login_Logout_Testcase" line="34">
-<kw name="open nopcommerce website">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20231118 12:21:57.015" rpa="false" schemaversion="3">
+<suite id="s1" name="Logintestcase" source="C:\Users\BSR\PycharmProjects\RobotFrameworkWebAutomation\Testcases\logintestcase.robot">
+<test id="s1-t1" name="test1" line="10">
+<kw name="open nopcommerce website" library="login">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230511 15:54:51.624" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
-<status status="PASS" starttime="20230511 15:54:51.624" endtime="20230511 15:54:56.338"/>
+<msg timestamp="20231118 12:21:57.140" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20231118 12:21:57.140" endtime="20231118 12:22:00.717"/>
 </kw>
-<status status="PASS" starttime="20230511 15:54:51.624" endtime="20230511 15:54:56.338"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231118 12:22:00.717" endtime="20231118 12:22:00.830"/>
 </kw>
-<kw name="click on login link">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${login}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230511 15:54:56.338" level="INFO">Clicking element '//a[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20230511 15:54:56.338" endtime="20230511 15:54:57.756"/>
+<status status="PASS" starttime="20231118 12:21:57.140" endtime="20231118 12:22:00.830"/>
 </kw>
-<status status="PASS" starttime="20230511 15:54:56.338" endtime="20230511 15:54:57.756"/>
-</kw>
-<kw name="Enter email">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${email}</arg>
-<arg>supriya@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230511 15:54:57.761" level="INFO">Typing text 'supriya@gmail.com' into text field '//input[@id='Email']'.</msg>
-<status status="PASS" starttime="20230511 15:54:57.761" endtime="20230511 15:54:57.844"/>
-</kw>
-<status status="PASS" starttime="20230511 15:54:57.756" endtime="20230511 15:54:57.844"/>
-</kw>
-<kw name="Enter password">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${password}</arg>
-<arg>Pass@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230511 15:54:57.844" level="INFO">Typing text 'Pass@123' into text field '//input[@id='Password']'.</msg>
-<status status="PASS" starttime="20230511 15:54:57.844" endtime="20230511 15:54:57.908"/>
-</kw>
-<status status="PASS" starttime="20230511 15:54:57.844" endtime="20230511 15:54:57.908"/>
-</kw>
-<kw name="click on login button">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${loginbutton}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230511 15:54:57.908" level="INFO">Clicking button '//button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20230511 15:54:57.908" endtime="20230511 15:54:58.725"/>
-</kw>
-<status status="PASS" starttime="20230511 15:54:57.908" endtime="20230511 15:54:58.725"/>
-</kw>
-<kw name="click on logout button">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${logout}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230511 15:54:58.733" level="INFO">Clicking element '//a[contains(text(),'Log out')]'.</msg>
-<status status="PASS" starttime="20230511 15:54:58.725" endtime="20230511 15:54:59.555"/>
-</kw>
-<status status="PASS" starttime="20230511 15:54:58.725" endtime="20230511 15:54:59.555"/>
-</kw>
-<status status="PASS" starttime="20230511 15:54:51.624" endtime="20230511 15:54:59.555"/>
+<status status="PASS" starttime="20231118 12:21:57.140" endtime="20231118 12:22:00.830"/>
 </test>
-<status status="PASS" starttime="20230511 15:54:51.498" endtime="20230511 15:54:59.555"/>
+<status status="PASS" starttime="20231118 12:21:57.015" endtime="20231118 12:22:00.832"/>
 </suite>
 <statistics>
 <total>
@@ -70,7 +27,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Logintestcase">Logintestcase</stat>
 </suite>
 </statistics>
 <errors>
